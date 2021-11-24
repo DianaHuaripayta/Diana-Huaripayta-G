@@ -1,12 +1,8 @@
+
 /* html{
     scroll-behavior: smooth;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.nav{
+} */
+/* .nav{
     background: #293241;
     height: 80px;
     color: #fff;
@@ -46,14 +42,14 @@
 }
 .nav__item:hover{
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-.nav__input:checked + .nav__menu{
+} */
+/* .nav__input:checked + .nav__menu{
     background: tomato;
 }
 .nav__label, .nav__input{
     display: none;
 } */
-section{
+/* section{
     text-align: center;
     line-height: 25px;
     margin: 0px 20px 0px 20px;
@@ -66,7 +62,8 @@ section{
 }
 .parrafo__columna p{
     text-align: center;
-}
+    color: var(--text-color);
+} */
 /* @media (max-width: 700px){
     header .nav{
         position: fixed;
@@ -106,7 +103,7 @@ section{
     }
 } */
 /* ------------------ */
-#nav {
+/* #nav {
     padding: 20px;
     text-align: center;
     position: fixed;
@@ -116,9 +113,9 @@ section{
     max-width: 400px;
     background: rgb(255, 219, 58);
     box-shadow: -3px 0 10px rgba(0,0,0,0.2);
-}
+} */
 
-#nav:not(:target) {
+/* #nav:not(:target) {
     right: -100%;
     transition: right 1.5s;
 }
@@ -126,4 +123,4 @@ section{
 #nav:target {
     right: 0;
     transition: right 1s;
-}
+} */
