@@ -1,15 +1,6 @@
-.topheader {
-   /*  box-shadow: 0 4px 5px var(--navbar-shallow-color);
-    position: fixed;
-    background-color: var(--theme-color);
-    left: 0;
-    top: 0;
-    width: 100%; */
+  header{
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
   }
-  /* .nav-item{
-    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-  } */
-  
   .topnav {
     display: flex;
     justify-content: space-between;
@@ -45,22 +36,16 @@
   }
   
   .menu a {
-    color: var(--text-color);
+    color: var(--color-logotype);
     font-size: 18px;
     font-weight: 500;
     line-height: 50px;
-    text-transform: uppercase;
-  
-    position: relative;
-
-    
+ 
   }
   .nav-item{
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-    background-color: rgb(71, 255, 71);
   }
   .nav-item::after{
-   
       content: "";
       display: block;
       background: rgb(248, 71, 71);
@@ -83,6 +68,9 @@
   .logotype {
     display: flex;
     justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-logotype);
   }
   
   @media (max-width: 950px) {
@@ -101,22 +89,16 @@
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.3s;
-      clip-path: circle(0 at center);
-      transition: clip-path 1s ease-in-out;
-      
+      clip-path: circle(0.0% at 50% 50%);
+      transition: clip-path 1s ease-in-out;  
     }
-
-  
     .menu li {
       padding: 0;
     }
-  
     .menu a {
       color: var(--text-color-inverse);
       line-height: 60px;
     }
-
-  
     .open-menu,
     .close-menu {
       display: block;
@@ -124,31 +106,21 @@
       background: none;
       cursor: pointer;
       background: tomato;
-
     }
-  
     .close-menu {
       align-self: flex-end;
       padding: 20px 15px;
       background: tomato;
-   
     }
-  
     .menu_opened {
       opacity: 1;
       pointer-events: all;
-      clip-path: circle(100% at center);
-    
-      /*  */
+      color: aqua;
+      background: blue;
+      clip-path: circle(70.7% at 50% 50%);
     }
-    /* .menu_opened:target{
-      color: yellow;
-      clip-path: circle(100% at center);
-    } */
-  
     .open-menu:focus:not(:focus-visible),
     .close-menu:focus:not(:focus-visible) {
       outline: none;
-
     }
   }

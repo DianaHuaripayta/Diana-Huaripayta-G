@@ -7,5 +7,6 @@ function toggleMenu() {
 
 }
 
-openMenuBtn.addEventListener("click", toggleMenu);//add
+openMenuBtn.addEventListener("click", toggleMenu);//add , setTimeout(myFunc, 2000)
+
 closeMenuBtn.addEventListener("click", toggleMenu);//quitar
