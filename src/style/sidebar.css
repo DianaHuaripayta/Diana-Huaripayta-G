@@ -1,0 +1,21 @@
+.dgn_icon_sidebar{
+    color: #fff;
+    font-size: 20px;
+}
+div.vertical-line{
+    width: 2px;
+    background-color: rgb(255, 254, 254);
+    height: 45%;
+    float: left;
+    margin: 0px 0px 0px 19px;
+}
+.container_sidebar{
+    display: flex;
+    flex-direction: column;
+}
+.container_icons{
+    margin-left: 5px;
+}
+.sidebar_icon{
+    margin: 5px;
+}

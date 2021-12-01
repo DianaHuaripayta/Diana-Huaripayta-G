@@ -8,6 +8,7 @@ section:nth-child(2){
 }
 section:nth-child(1){
     background-image: url('../assets/backgroundBlackAndPink.png');
+    background-size: cover;
     width: 100%;
     height: 650px;
 }
