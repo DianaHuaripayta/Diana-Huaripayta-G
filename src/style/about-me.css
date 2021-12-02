@@ -1,0 +1,24 @@
+.container_about_me{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    height: 650px;
+    display: flex;
+    align-items: center;
+}
+.box_about_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    border: solid #fff;
+    padding: 20px;
+    margin-left: 16rem;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+.subTitle{
+    text-align: center;
+    font-size: 26px;
+}
+.p_aboutMe{
+    line-height: 30px;
+    font-size: 18px;
+}
