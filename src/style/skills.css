@@ -1,0 +1,132 @@
+.container_skills{
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    height: 650px;
+}
+.subTitle_skills{
+    text-align: center;
+    font-size: 26px;
+    padding-top: 26px;
+    margin: 0;
+    color: #ffff;
+    font-weight: bold;
+}
+
+
+
+
+li{ /*style the li tag*/
+	list-style-type: none;
+	font-family: sans-serif;
+}
+
+.skills{ /*style the text*/
+	width: 500px;
+	margin: 60px auto;
+	color: #fff;
+}
+
+.skills li{ /*set margin of li*/
+	margin: 20px 0;
+}
+
+.bar{ /*style the bar*/
+	background-color: #fff;
+	display: block;
+	height: 4px;
+	border: 1px solid rgba(243, 202, 246, 0.87);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #fff;
+}
+
+.bar span{ /*style the span tag*/
+	height: 4px;
+	float: left;
+/* 	background-color: #f30c86; */
+}
+
+.html{ /*set skills and animation of html*/
+	width: 80%;
+	animation: html 2s;
+    background-color: #ff9f86;
+}
+
+.css{ /*set skills and animation of css*/
+	width: 93%;
+	animation: css 2s;
+    background-color: #279fd5;
+}
+
+.javascript{ /*set skills and animation of javascript*/
+	width: 50%;
+	animation: javascript 2s;
+    background-color: #ffee58;
+}
+
+.react{ /*set skills and animation of react*/
+	width: 30%;
+	animation: react 2s;
+    background-color: #46caf2;
+}
+
+@keyframes html{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+
+@keyframes css{ /*animate css skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 93%;
+	}
+}
+
+@keyframes javascript{ /*animate javascript skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+}
+
+@keyframes react{ /*animate react skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 30%;
+	}
+}
+@media (max-width: 950px) {
+    .skills{ /*style the text*/
+        width: 76%;
+        margin: 60px auto;
+        color: #fff;
+    }
+    
+    .skills li{ /*set margin of li*/
+        margin: 20px 0;
+    }
+    
+    .bar{ /*style the bar*/
+        background-color: #fff;
+        display: block;
+        height: 2px;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 3px;
+        overflow: hidden;
+        /* box-shadow: 0 0 10px #2187e7b3; */
+    }
+    
+}
