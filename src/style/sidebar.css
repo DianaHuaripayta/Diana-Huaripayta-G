@@ -1,0 +1,39 @@
+.vertical-line{
+    width: 2px;
+    height: 12rem;
+    background-color: rgb(255, 254, 254);
+    float: left;
+    margin: 0px 0px 0px 19px;
+}
+.dgn_icon_sidebar{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.dgn_icon_sidebar.gmail:hover{
+    font-size: 28px; 
+    color: rgb(255, 167, 109);
+}
+.dgn_icon_sidebar.linkedin:hover{
+    font-size: 28px; 
+    color: rgb(78, 127, 233);
+}
+.dgn_icon_sidebar.github:hover{
+    font-size: 28px; 
+    color: rgb(77, 56, 73);
+}
+.dgn_icon_sidebar.whatsapp:hover{
+    font-size: 28px; 
+    color: rgb(86, 236, 144);
+}
+.container_icons{
+    margin-left: 5px;
+}
+.sidebar_icon{
+    margin: 5px;
+}
+.container_sidebar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}

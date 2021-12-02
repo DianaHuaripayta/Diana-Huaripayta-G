@@ -5,8 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diana-Huaripayta-G</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/navBar.css">
+    <link rel="stylesheet" href="./style/profile.css">
+    <link rel="stylesheet" href="./style/sidebar.css">
+    <link rel="stylesheet" href="./style/about-me.css">
 </head>
 <body>
-    <h1>Hello word this is my PORTAFOLIO</h1>
+  <header>
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <div class="logotype">
+            Diana Angelica
+          </div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="./assets/menu.svg" alt="abrir menú" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="./assets/Xicons.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#profile" class="nav-item">Perfil</a></li>
+          <li><a href="#experience" class="nav-item">Experiencia</a></li>
+          <li><a href="#skills" class="nav-item">Habilidades</a></li>
+          <li><a href="#contact" class="nav-item">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+  
+
+    <section class="container_profile">
+      <!-- sidebar -->
+      <section class="container_sidebar">
+        <div class="vertical-line"></div>
+        <div class="container_icons">
+          <div class="sidebar_icon"><i class="fas fa-envelope dgn_icon_sidebar gmail"></i></div>
+          <div class="sidebar_icon"><i class="fab fa-linkedin-in dgn_icon_sidebar linkedin"></i></div>
+          <div class="sidebar_icon"><i class="fab fa-github dgn_icon_sidebar github"></i></div>
+          <div class="sidebar_icon"><i class="fab fa-whatsapp dgn_icon_sidebar whatsapp"></i></div>
+        </div>
+        <div class="vertical-line"></div>
+      </section>
+      <div class="container_img_circle">
+        <img src="./assets/DianaAngelica.png" alt="diana img" class="imgDiana">
+        <div class="container_side_photo">
+          <div class="typewriter">
+            <h1>!Hello world! ;)</h1>
+          </div>
+          <div><p class="p_developer">I'm developer</p></div>  
+          <div>
+            <p>
+               <a href="./assets/CV-Diana_HuaripaytaG-PDF.pdf" class="download-cv" download>Download CV</a>
+            </p>
+         </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="container_about_me">
+        <div class="box_about_me">
+          <p class="subTitle">About me</p>
+          <p class="p_aboutMe">Soy Front-End Developer, me considero una apasionada de la tecnología ya que 
+            disfruto de crear y proponer soluciones de acuerdo con la naturaleza de la 
+            organización. Desde muy pequeña me atrajo la tecnología, es por ello que decidí 
+            ingresar a LABORATORIA, lo cual me permitió desarrollarme en el área de 
+            Tecnología</p>
+        </div>
+      </section>  
+      <section class="container_skills">
+    
+      </section>
+  
+    </main>
+
+<script src="https://kit.fontawesome.com/99e095b5b2.js" crossorigin="anonymous"></script>
+<script src="./app/app.js"></script>
 </body>
 </html>
