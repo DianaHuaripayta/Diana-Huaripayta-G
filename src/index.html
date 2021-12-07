@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./style/sidebar.css">
     <link rel="stylesheet" href="./style/about-me.css">
     <link rel="stylesheet" href="./style/skills.css">
+    <link rel="stylesheet" href="./style/projects.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
   <header>
@@ -29,9 +31,9 @@
             <img src="./assets/Xicons.svg" alt="cerrar menú" />
           </button>
           <li><a href="#profile" class="nav-item">Perfil</a></li>
-          <li><a href="#experience" class="nav-item">Experiencia</a></li>
-          <li><a href="#skills" class="nav-item">Habilidades</a></li>
-          <li><a href="#contact" class="nav-item">Contacto</a></li>
+          <li><a href="#experience" class="nav-item">Sobre mi</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#proyectos" class="nav-item">Proyectos</a></li>
         </ul>
       </nav>
     </header>
@@ -43,10 +45,10 @@
     <section class="container_sidebar">
       <div class="vertical-line"></div>
       <div class="container_icons">
-        <div class="sidebar_icon"><i class="fas fa-envelope dgn_icon_sidebar gmail"></i></div>
-        <div class="sidebar_icon"><i class="fab fa-linkedin-in dgn_icon_sidebar linkedin"></i></div>
-        <div class="sidebar_icon"><i class="fab fa-github dgn_icon_sidebar github"></i></div>
-        <div class="sidebar_icon"><i class="fab fa-whatsapp dgn_icon_sidebar whatsapp"></i></div>
+        <div class="sidebar_icon"><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=angelicadiana2002@gmail.com" target="_blank" > <i class="fas fa-envelope dgn_icon_sidebar gmail"></i></a></div>
+        <div class="sidebar_icon"><a href="https://www.linkedin.com/in/diana-hg/" target="_blank" ><i class="fab fa-linkedin-in dgn_icon_sidebar linkedin"></i></a></div>
+        <div class="sidebar_icon"><a href="https://github.com/DianaHuaripayta" target="_blank" ><i class="fab fa-github dgn_icon_sidebar github"></i></a></div>
+        <div class="sidebar_icon"><a href="https://api.whatsapp.com/send?phone=+51947328068&text=Mas%20información%20por%20favor" target="_blank" ><i class="fab fa-whatsapp dgn_icon_sidebar whatsapp"></i></a></div>
       </div>
       <div class="vertical-line"></div>
     </section>
@@ -68,7 +70,7 @@
 
   <section class="container_about_me">
     <div class="box_about_me">
-      <p class="subTitle">About me 👩</p>
+      <p class="subTitle" id="experience">Sobre mi 👩</p>
       <p class="p_aboutMe">Soy Front-End Developer 💻, me considero una apasionada de la tecnología ya que 
         disfruto de crear y proponer soluciones de acuerdo con la naturaleza de la 
         organización 🤓. Desde muy pequeña me atrajo la tecnología, es por ello que decidí 
@@ -77,7 +79,7 @@
     </div>
   </section>  
   <section class="container_skills">
-    <P class="subTitle_skills">Skills</P>
+    <P class="subTitle_skills" id='skills'>Skills</P>
     <div class="skills">  <!-- create a div -->
       <li>
         <h3>HTML5</h3><span class="bar"><span class="html"></span></span> <!-- skill bar 1 -->
@@ -96,8 +98,195 @@
       </li>
     </div>
   </section>
-</main>
+  <section class="container_projects">
+    <P class="subTitle_skills" id="proyectos">Proyectos</P>
+    <div class="grid-container">
+      <div class="grid-item tall" style="background-image: url('./assets/CourseShare.png')">
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#social-network">
+          Mas
+        </button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="social-network" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Social Network - CourseShare</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./assets/timeline.png" alt="CourseShare" style="width: 100%;">
+             <div class="box-btn-modal">
+              <a href="https://dianahuaripayta.github.io/LIM015-social-network/src/" class="box_ver_project" target="_blank" > Ver proyecto</a>
+              <a href="https://github.com/DianaHuaripayta/LIM015-social-network" class="box_ver_project" target="_blank" > Ver repositorio</a>
+             </div>
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="grid-item tall" style="background-image: url('./assets/StudioGhibli.png')">
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#data-lovers-ghibli">
+          Mas
+        </button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="data-lovers-ghibli" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">data-lovers-ghibli</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <img src="./assets/imgGhibli.png" alt="studio ghibli" style="width: 100%;">
+              <div class="box-btn-modal">
+               <a href="https://dianahuaripayta.github.io/LIM015-data-lovers-ghibli/src/" class="box_ver_project" target="_blank" > Ver proyecto</a>
+               <a href="https://github.com/DianaHuaripayta/LIM015-data-lovers-ghibli" class="box_ver_project" target="_blank" > Ver repositorio</a>
+              </div>
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="grid-item wide" style="background-image: url('./assets/backgroundBlackAndPink.png');">
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#md-links">
+          Mas
+        </button>
+      </div> -->
+      <!-- Modal -->
+      <!-- <div class="modal fade" id="md-links" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">md-links </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./assets/imgGhibli.png" alt="studio ghibli" style="width: 100%;">
+              <div class="box-btn-modal">
+               <a href="https://dianahuaripayta.github.io/LIM015-data-lovers-ghibli/src/" class="box_ver_project" target="_blank" > Ver proyecto</a>
+               <a href="https://github.com/DianaHuaripayta/LIM015-data-lovers-ghibli" class="box_ver_project" target="_blank" > Ver repositorio</a>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <!--CARD VALIDATION  -->
+      <div class="grid-item tall" style="background-image: url('./assets/cardValidation.png');">
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#card-validation">
+          Mas
+        </button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="card-validation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Card Validation</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./assets/card_validation.png" alt="studio ghibli" style="width: 100%;">
+              <div class="box-btn-modal">
+               <a href="https://dianahuaripayta.github.io/LIM015-data-lovers-ghibli/src/" class="box_ver_project" target="_blank" > Ver proyecto</a>
+               <a href="https://github.com/DianaHuaripayta/LIM015-data-lovers-ghibli" class="box_ver_project" target="_blank" > Ver repositorio</a>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item tall" style="background-image:url('./assets/mdLinks.png');">
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#burger-queen">
+          Mas
+        </button>
+      </div>
+        <!-- Modal -->
+      <div class="modal fade" id="burger-queen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">burger-queen</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./assets/imgGhibli.png" alt="studio ghibli" style="width: 100%;">
+              <div class="box-btn-modal">
+               <a href="https://dianahuaripayta.github.io/LIM015-data-lovers-ghibli/src/" class="box_ver_project" target="_blank" > Ver proyecto</a>
+               <a href="https://github.com/DianaHuaripayta/LIM015-data-lovers-ghibli" class="box_ver_project" target="_blank" > Ver repositorio</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- mdLinks -->
+      <!-- <div class="grid-item" style="background-image: url('./assets/mdLinks.png')">
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Mas
+        </button>
+      </div>
+
+    </div> -->
+
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">MD-LINKS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assets/mdLinksShow.png" alt="studio ghibli" style="width: 100%;">
+        <div class="box-btn-modal">
+         <a href="https://github.com/DianaHuaripayta/LIM015-md-links" class="box_ver_project" target="_blank" > Ver proyecto</a>
+         <a href="https://github.com/DianaHuaripayta/LIM015-md-links" class="box_ver_project" target="_blank" > Ver repositorio</a>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+  </section>
+</main>
+<footer class="footer">
+  <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>. Diana Huaripayta 👩‍💻.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/99e095b5b2.js" crossorigin="anonymous"></script>
+<script src="./app/app.js"></script>
 </body>
 </html>
