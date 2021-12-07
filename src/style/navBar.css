@@ -16,7 +16,8 @@
     align-items: center;
     font-size: 18px;
     font-weight: 500;
-    color: #50505000;;
+    /* color: #50505000; */
+    text-decoration: none;
   }
   
   .logo img {
