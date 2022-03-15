@@ -32,7 +32,7 @@ li{ /*style the li tag*/
 .bar{ /*style the bar*/
 	background-color: #fff;
 	display: block;
-	height: 4px;
+	height: 8px;
 	border: 1px solid rgba(243, 202, 246, 0.87);
 	border-radius: 3px;
 	overflow: hidden;
@@ -40,7 +40,7 @@ li{ /*style the li tag*/
 }
 
 .bar span{ /*style the span tag*/
-	height: 4px;
+	height: 8px;
 	float: left;
 /* 	background-color: #f30c86; */
 }
@@ -62,11 +62,22 @@ li{ /*style the li tag*/
 	animation: javascript 2s;
     background-color: #ffee58;
 }
+.typeScript{ /*set skills and animation of javascript*/
+	width: 30%;
+	animation: typeScript 2s;
+    background-color: #d8ff58;
+}
+
 
 .react{ /*set skills and animation of react*/
-	width: 30%;
+	width: 60%;
 	animation: react 2s;
     background-color: #46caf2;
+}
+.materialUI{ /*set skills and animation of react*/
+	width: 55%;
+	animation: materialUI 2s;
+    background-color: #4674f2;
 }
 
 @keyframes html{ /*animate html skills*/
@@ -98,6 +109,15 @@ li{ /*style the li tag*/
 		width: 50%;
 	}
 }
+@keyframes typeScript{ /*animate javascript skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 30%;
+	}
+}
 
 @keyframes react{ /*animate react skills*/
 	0%{
@@ -105,7 +125,16 @@ li{ /*style the li tag*/
 	}
 
 	100%{
-		width: 30%;
+		width: 60%;
+	}
+}
+@keyframes materialUI{ /*animate react skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 55%;
 	}
 }
 @media (max-width: 950px) {

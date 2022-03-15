@@ -4,15 +4,18 @@
     background-size: cover;
     width: 100%;
     height: 650px;
+  
 }
 .container_img_circle{
     display: flex;
     flex-direction: row;
     padding: 10px;
+    justify-content: space-evenly;
+    height: 82vh;
 }
 
 .imgDiana{
-    width: 712px;
+  width: 20vw;
 }
 /* container_side_photo */
 .container_side_photo{
@@ -80,7 +83,7 @@
       align-items: center;
     }
     .imgDiana{
-        width: 20rem;
+        width: 12rem;
     }
     .typewriter h1 {
       padding-bottom: 20px;
